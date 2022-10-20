@@ -28,6 +28,7 @@ public class JsonwebtokenProjectApplication {
 	@Bean
 	CommandLineRunner run(UserService userService){
 		return args -> {
+
 			userService.saveRole(new Role(null,"ROLE_USER"));
 			userService.saveRole(new Role(null,"ROLE_MANAGER"));
 			userService.saveRole(new Role(null,"ROLE_ADMIN"));
